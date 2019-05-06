@@ -20,7 +20,19 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
     <script>
-      angular.module("app",[])
+      var app = angular.module("app",[])
+      app.controller("PostsCtrl", function ($scope) {
+        $scope.posts = [
+          {
+            username: "dickeyxxx",
+            body: "Node rules!"
+          },
+          {
+            username: "jeffdickey",
+            body: "trying out anguar.js..."
+          }
+        ]
+      })
     </script>
   </body>
 </html>
